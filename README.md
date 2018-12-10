@@ -14,9 +14,11 @@ NELL-995: a knowledge graph from Carnegie Mellon university containing 142,065 t
 DBped-p: a subset of DBpedia KG that are related to political issues, containing 352,754 triples. [\[Download\]](https://github.com/bagindokemas/meOnJIST2018/blob/master/DBPedP.txt.zip)
 
 # The schemas of the knowledge graph (TBoxes)
-IBM-KG. [\[Download\]](master/NELLKG0.zip)
-NELL-995. [\[Download\]](master/NELLKG0.zip)
-DBpedia. [\[Download\]](master/NELLKG0.zip)
+IBM-KG. [\[Download\]](https://github.com/bagindokemas/SAIKGC/blob/master/IBM-vApr18.owl)
+
+NELL-995. [\[Download\]](https://github.com/bagindokemas/SAIKGC/blob/master/NELL.ontology.ttl)
+
+DBpedia. [\[Download\]](https://github.com/bagindokemas/SAIKGC/blob/master/dbpedia_2016-04.owl)
 
 # Triples Producers
 Knowledge graph embedding: KB2E-TransE. More about this tool, please click [here](https://github.com/thunlp/KB2E)
@@ -42,10 +44,3 @@ There are two components of approximate consistency checking module. First is [T
 11. Put TBoxPatterns and EKG-E into one folder and then run the ABox scanner on it to produce new and correct triples (NCT-E).
 12. Add NCT-R with NCT-M and NCT-E into total-NCT.
 13. Compare total-NCT with the number of triples that processed by RUMIS in step 7 and multiply it with 100%. If the figure is \< 1% than stop the iteration. If it is \> 1%, go to step 7 and repeat the next iteration.
-
-
-
-
-
-
-
