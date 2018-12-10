@@ -14,6 +14,8 @@ NELL-995: a dataset from Carnegie Mellon university containing 142,065 triples.
 DBped-p: a subset of DBpedia KG that are related to political issues, containing 352,754 triples.
 
 # Triples Producers
-Knowledge graph embedding: KB2E-TransE. More about this tool, please click [here] (https://github.com/thunlp/KB2E)
+Knowledge graph embedding: KB2E-TransE. More about this tool, please click [here](https://github.com/thunlp/KB2E)
 
 Rule learning system: RUMIS
+
+[GitHub](http://github.com)
