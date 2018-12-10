@@ -34,9 +34,15 @@ There are two components of approximate consistency checking module. First is [T
 3. Download the approximate consistency checking (ACC) module, uncompress it and put it under ACC directory.
 4. Download the schemas / TBoxes, uncompress it and put it under ACC directory.
 5. Now, you already have all the ingredients to start the experiment! Choose a KG and its schema that you want to expand. Assume that  you choose NELL KG. There are many alternative flows that you can try from our paper. For example, if you want to run R-ACC-M-ACC-E-ACC flow for NELL KG, these are the following steps that you need to do.
-6. Run the TBox of NELL using TBox scanner. Collect the outputs, as it will be needed by the ABox scanner.
-7. Run the ABox of NELL KG using RUMIS, collect the new triples/expanded.
-8. Run the ABox 
+6. Run the TBox of NELL using TBox scanner. Collect the outputs (TBoxPatterns), as it will be needed by the ABox scanner.
+7. Run the initial ABox of NELL KG using RUMIS and then collect the new triples/expanded knowledge graph (EKG-R).
+8. Put TBoxPatterns and EKG-R into one folder and then run the ABox scanner on it to produce new and correct triples (NCT-R).
+9. Merge the initial ABox of NELL KG with NCT-R (we call the result of this merger INCT). Then, merge INCT with the TBox of NELL KG (you can do the last merger with using OWLOntologyMerger service from OWLAPI) and then run the merge file between INCT and the TBox of NELL KG using the materialization service of Hermit to produce new and correct triples (NCT-M).
+10. Merge INCT with NCT-M (we call the result of this merger I-Embed). Then, run I-Embed with using the modified KB2E to produce new triples/expanded knowledge graph (EKG-E).
+11. Put TBoxPatterns and EKG-E into one folder and then run the ABox scanner on it to produce new and correct triples (NCT-E).
+12. Add NCT-R with NCT-M and NCT-E into total-NCT.
+13. Compare total-NCT with the number of triples that processed by RUMIS in step 7 and multiply it with 100%. If the figure is \< 1% than stop the iteration. If it is \> 1%, go to step 7 and repeat the next iteration.
+
 
 
 
