@@ -2,9 +2,11 @@
 This is a repository for the code and the dataset of our work: Schema Aware Iterative Knowledge Graph Completion (SAIKGC) that is under review in Journal of Web Semantic
 
 # Dependencies
-    python 2.7.12
+    Python 3.7.3
     OWLAPI 4.1.3
     JRE 1.8.0
+    gcc-9.1.0
+    jdk-12.0.1
     
 # Dataset (ABoxes)
 IBM-KG: a knowledge graph automatically generated based on [IBM Storwize Knowledge Center articles](https://www.ibm.com/support/knowledgecenter/en/ST3FR7) , containing 28,982 triples. [\[Download\]](https://github.com/bagindokemas/meOnJIST2018/blob/master/IBMKG0.zip)
