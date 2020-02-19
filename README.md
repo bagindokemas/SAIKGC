@@ -9,21 +9,19 @@ This is a repository for the code and the dataset of our work: Schema Aware Iter
     jdk-12.0.1
     
 # Dataset (ABoxes)
-IBM-KG: a knowledge graph automatically generated based on [IBM Storwize Knowledge Center articles](https://www.ibm.com/support/knowledgecenter/en/ST3FR7) , containing 28,982 triples. [\[Download\]](https://github.com/bagindokemas/meOnJIST2018/blob/master/IBMKG0.zip)
-
 NELL-995: a knowledge graph from Carnegie Mellon university containing 142,065 triples. [\[Download\]](https://github.com/bagindokemas/meOnJIST2018/blob/master/NELLKG0.zip)
 
 DBped-p: a subset of DBpedia KG that are related to political issues, containing 352,754 triples. [\[Download\]](https://github.com/bagindokemas/meOnJIST2018/blob/master/DBPedP.txt.zip)
 
 # The schemas of the knowledge graph (TBoxes)
-IBM-KG. [\[Download\]](https://github.com/bagindokemas/SAIKGC/blob/master/IBM-vApr18.owl)
-
 NELL-995. [\[Download\]](https://github.com/bagindokemas/SAIKGC/blob/master/NELL.ontology.ttl)
 
 DBpedia. [\[Download\]](https://github.com/bagindokemas/SAIKGC/blob/master/dbpedia_2016-04.owl)
 
 # Triples Producers
-Knowledge graph embedding: KB2E-TransE. More about this tool, please click [here](https://github.com/thunlp/KB2E)
+Knowledge graph embedding: 
+KB2E-TransE. More about this tool, please click [here](https://github.com/thunlp/KB2E)
+TransC. More about this tool, please click [here](https://github.com/davidlvxin/TransC)
 
 Rule learning system: RUMIS. More about this tool, please click [here](https://github.com/htran010589/nonmonotonic-rule-mining)
 
