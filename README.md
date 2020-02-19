@@ -1,5 +1,5 @@
 # SAIKGC
-This is a repository for the code and the dataset of our work: Schema Aware Iterative Knowledge Graph Completion (SAIKGC)
+This is a repository for the code and the dataset of our work: Schema Aware Iterative Knowledge Graph Completion (SAIKGC) that is under review in Journal of Web Semantic
 
 # Dependencies
     python 2.7.12
