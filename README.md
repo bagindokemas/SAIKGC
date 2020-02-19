@@ -32,6 +32,9 @@ materialization service of the Hermit reasoner. More More about this tool, pleas
 # Approximate Consistency Checking (ACC)
 There are two components of approximate consistency checking module. First is [TBox Scanner](https://github.com/bagindokemas/meOnJIST2018/blob/master/TBoxScanner.java) and the second is [ABox scanner](https://github.com/bagindokemas/meOnJIST2018/blob/master/ABoxScanner.zip). 
 
+# Bash scripts for integrating the triple producers, and ACC in MapReduce manner
+
+
 # Usage
 1. First of all, download all the dataset, uncompress it and put it under Dataset directory. 
 2. Download the modified KB2E and materialization service of Hermit [here](). Also, download RUMIS tool from [here](https://github.com/htran010589/nonmonotonic-rule-mining). Put all these triple producers under TripleProducer directory.
