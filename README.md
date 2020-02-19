@@ -20,10 +20,12 @@ DBpedia. [\[Download\]](https://github.com/bagindokemas/SAIKGC/blob/master/dbped
 
 # Triples Producers
 Knowledge graph embedding: 
-KB2E-TransE. More about this tool, please click [here](https://github.com/thunlp/KB2E)
-TransC. More about this tool, please click [here](https://github.com/davidlvxin/TransC)
+KB2E-TransE. More about this tool, please click [here](https://github.com/thunlp/KB2E).
+TransC. More about this tool, please click [here](https://github.com/davidlvxin/TransC).
 
-Rule learning system: RUMIS. More about this tool, please click [here](https://github.com/htran010589/nonmonotonic-rule-mining)
+Rule learning system: 
+RUMIS. More about this tool, please click [here](https://github.com/htran010589/nonmonotonic-rule-mining).
+RuLES. More about this tool, please click [here](https://github.com/hovinhthinh/RuLES).
 
 materialization service of the Hermit reasoner. More More about this tool, please click [here](http://www.hermit-reasoner.com/)
 
