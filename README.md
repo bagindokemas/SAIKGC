@@ -41,8 +41,13 @@ There are two components of approximate consistency checking module. First is [T
 2. If you want to run the Classic SIC, please download the modified KB2E [here](https://github.com/bagindokemas/SAIKGC/blob/master/KB2ETransE.zip)and materialization service of Hermit [here](https://github.com/bagindokemas/SAIKGC/blob/master/MaterializationServiceHErmit.zip). Also, download RUMIS tool from [here](https://github.com/htran010589/nonmonotonic-rule-mining). Put all these triple producers under TripleProducer directory. But, if you want to run the MapReduce SIC, please download TransC and RuLES in the link that I have aforementioned above.
 3. Download the approximate consistency checking (ACC) module, uncompress it and put it under ACC directory.
 4. Download the schemas / TBoxes, uncompress it and put it under ACC directory.
-5. Now, you already have all the ingredients to start the experiment! Choose a KG and its schema that you want to expand. Assume that  you choose NELL KG. There are many alternative flows that you can try from our paper. For example, if you want to run R-ACC-M-ACC-E-ACC flow for NELL KG, these are the following steps that you need to do.
-6. Run the TBox of NELL using TBox scanner. Collect the outputs (TBoxPatterns), as it will be needed by the ABox scanner.
+5. Download all the scripts inside the ReduceStage folder.
+6. Download all the scripts inside the ScriptForRL folder.
+7. Download all the scripts inside the ScriptForEmbedding folder.
+8. Download all the scripts inside the Materialization folder.
+9. Now, you already have all the ingredients to start the experiment! Choose a KG and its schema that you want to expand. Assume that  you choose NELL KG. There are many alternative flows/combination that you can try from our paper. For example, if you want to run flow 10: R-ACC-E-ACC-M flow for NELL KG, these are the following steps that you need to do.
+
+a. Run the TBox of NELL using TBox scanner. Collect the outputs (TBoxPatterns), as it will be needed by the ABox scanner.
 7. Run the initial ABox of NELL KG using RUMIS and then collect the new triples/expanded knowledge graph (EKG-R).
 8. Put TBoxPatterns and EKG-R into one folder and then run the ABox scanner on it to produce new and correct triples (NCT-R).
 9. Merge the initial ABox of NELL KG with NCT-R (we call the result of this merger INCT). Then, merge INCT with the TBox of NELL KG (you can do the last merger with using OWLOntologyMerger service from OWLAPI) and then run the merge file between INCT and the TBox of NELL KG using the materialization service of Hermit to produce new and correct triples (NCT-M).
