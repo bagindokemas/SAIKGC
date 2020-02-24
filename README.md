@@ -1,4 +1,4 @@
-# SAIKGC
+# SIC
 This is a repository for the code and the dataset of our work: Schema Aware Iterative Knowledge Graph Completion (SAIKGC) that is under review in Journal of Web Semantic
 
 # Dependencies
@@ -26,14 +26,15 @@ TransC. More about this tool, please click [here](https://github.com/davidlvxin/
 Rule learning system: 
 RUMIS. More about this tool, please click [here](https://github.com/htran010589/nonmonotonic-rule-mining).
 RuLES. More about this tool, please click [here](https://github.com/hovinhthinh/RuLES).
-
-materialization service of the Hermit reasoner. More More about this tool, please click [here](http://www.hermit-reasoner.com/)
+materialization service of the Hermit reasoner. More about this tool, please click [here](http://www.hermit-reasoner.com/)
 
 # Approximate Consistency Checking (ACC)
 There are two components of approximate consistency checking module. First is [TBox Scanner](https://github.com/bagindokemas/meOnJIST2018/blob/master/TBoxScanner.java) and the second is [ABox scanner](https://github.com/bagindokemas/meOnJIST2018/blob/master/ABoxScanner.zip). 
 
-# Bash scripts for integrating the triple producers, and ACC in MapReduce manner
-
+# Bash and python scripts for integrating the triple producers, and ACC in MapReduce manner
+1. Scripts for operating the KG Embedding approach.
+2. Scripts for operating the Rule Learning approach.
+3. Scripts for executing the Reduce Stage for a triple producer.
 
 # Usage
 1. First of all, download all the dataset, uncompress it and put it under Dataset directory. 
