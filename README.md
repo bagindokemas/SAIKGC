@@ -32,13 +32,13 @@ materialization service of the Hermit reasoner. More about this tool, please cli
 There are two components of approximate consistency checking module. First is [TBox Scanner](https://github.com/bagindokemas/meOnJIST2018/blob/master/TBoxScanner.java) and the second is [ABox scanner](https://github.com/bagindokemas/meOnJIST2018/blob/master/ABoxScanner.zip). 
 
 # Bash and python scripts for integrating the triple producers, and ACC in MapReduce manner
-1. Scripts for operating the KG Embedding approach.
-2. Scripts for operating the Rule Learning approach.
-3. Scripts for executing the Reduce Stage for a triple producer.
+1. Scripts for operating the KG Embedding approach (located in the folder ScriptForEmbedding).
+2. Scripts for operating the Rule Learning approach (located in the folder ScriptForRL).
+3. Scripts for executing the Reduce Stage for a triple producer (located in the folder ReduceStage).
 
 # Usage
 1. First of all, download all the dataset, uncompress it and put it under Dataset directory. 
-2. Download the modified KB2E and materialization service of Hermit [here](). Also, download RUMIS tool from [here](https://github.com/htran010589/nonmonotonic-rule-mining). Put all these triple producers under TripleProducer directory.
+2. If you want to run the Classic SIC, please download the modified KB2E and materialization service of Hermit [here](). Also, download RUMIS tool from [here](https://github.com/htran010589/nonmonotonic-rule-mining). Put all these triple producers under TripleProducer directory. But, if you want to run the MapReduce SIC, please download TransC and RuLES in the link that I have aforementioned above.
 3. Download the approximate consistency checking (ACC) module, uncompress it and put it under ACC directory.
 4. Download the schemas / TBoxes, uncompress it and put it under ACC directory.
 5. Now, you already have all the ingredients to start the experiment! Choose a KG and its schema that you want to expand. Assume that  you choose NELL KG. There are many alternative flows that you can try from our paper. For example, if you want to run R-ACC-M-ACC-E-ACC flow for NELL KG, these are the following steps that you need to do.
