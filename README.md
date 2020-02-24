@@ -38,7 +38,7 @@ There are two components of approximate consistency checking module. First is [T
 
 # Usage
 1. First of all, download all the dataset, uncompress it and put it under Dataset directory. 
-2. If you want to run the Classic SIC, please download the modified KB2E and materialization service of Hermit [here](https://github.com/bagindokemas/SAIKGC/blob/master/KB2ETransE.zip). Also, download RUMIS tool from [here](https://github.com/htran010589/nonmonotonic-rule-mining). Put all these triple producers under TripleProducer directory. But, if you want to run the MapReduce SIC, please download TransC and RuLES in the link that I have aforementioned above.
+2. If you want to run the Classic SIC, please download the modified KB2E [here](https://github.com/bagindokemas/SAIKGC/blob/master/KB2ETransE.zip)and materialization service of Hermit [here](https://github.com/bagindokemas/SAIKGC/blob/master/MaterializationServiceHErmit.zip). Also, download RUMIS tool from [here](https://github.com/htran010589/nonmonotonic-rule-mining). Put all these triple producers under TripleProducer directory. But, if you want to run the MapReduce SIC, please download TransC and RuLES in the link that I have aforementioned above.
 3. Download the approximate consistency checking (ACC) module, uncompress it and put it under ACC directory.
 4. Download the schemas / TBoxes, uncompress it and put it under ACC directory.
 5. Now, you already have all the ingredients to start the experiment! Choose a KG and its schema that you want to expand. Assume that  you choose NELL KG. There are many alternative flows that you can try from our paper. For example, if you want to run R-ACC-M-ACC-E-ACC flow for NELL KG, these are the following steps that you need to do.
