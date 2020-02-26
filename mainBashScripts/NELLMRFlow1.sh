@@ -247,6 +247,15 @@ do
 	python 15.addConceptLabeltoValid.py ../DataMRCombination/outputMateIte$i/CandinputKG$i.txt ../TBOXesNELL/NELLInstClassString.txt ../DataMRCombination/NELLKG$i.txt 
 
 	cd ..
+	
+	#stopping condition: jika NELLKGi+1 sama dengan NELLKGi
+        AfterIter=$(wc -l DataMRCombination/NELLKG$i.txt $1 | cut -d " " -f 1)
+        #stopping condition: jika inputKGi+1 sama dengan inputKGi
+        if [ $AfterIter -eq $forNextIter ]
+        then
+                break
+        fi
+
 	if [ $i -eq 80 ]
 	then
 	    break
