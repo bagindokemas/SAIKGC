@@ -1,6 +1,6 @@
 #asumsi: data NELL sudah > 150k, 
 #harus dalam format subject predicate object (dilakukan secara manual)
-i=67
+i=0
 while true;
 do 
 	forNextIter=$(wc -l DataMRCombination/NELLKG$i.txt $1 | cut -d " " -f 1)
