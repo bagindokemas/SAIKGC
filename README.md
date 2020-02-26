@@ -38,13 +38,15 @@ There are two components of approximate consistency checking module. First is [T
 
 # Usage
 1. First of all, download all the dataset, uncompress it and put it under Dataset directory. 
-2. If you want to run the Classic SIC, please download the modified KB2E [here](https://github.com/bagindokemas/SAIKGC/blob/master/KB2ETransE.zip)and materialization service of Hermit [here](https://github.com/bagindokemas/SAIKGC/blob/master/MaterializationServiceHErmit.zip). Also, download RUMIS tool from [here](https://github.com/htran010589/nonmonotonic-rule-mining). Put all these triple producers under TripleProducer directory. But, if you want to run the MapReduce SIC, please download TransC and RuLES in the link that I have aforementioned above.
-3. Download the approximate consistency checking (ACC) module, uncompress it and put it under ACC directory.
-4. Download the schemas / TBoxes, uncompress it and put it under ACC directory.
-5. Download all the scripts inside the ReduceStage folder.
-6. Download all the scripts inside the ScriptForRL folder.
-7. Download all the scripts inside the ScriptForEmbedding folder.
-8. Download all the scripts inside the Materialization folder.
-9. Download all the scripts inside the mainBashScripts folder.
-10. Assume that  you choose the NELL KG, then, run the TBox of the NELL KG using TBox scanner. Collect the outputs (TBoxPatterns), as it will be needed by the ABox scanner.
-11. There are many alternative combinations that you can try from our paper. For example, if you want to run combination 1: R-ACC-E-ACC-M for the NELL KG, pick NELLMRFlow1.sh and then change the value of variable i (in line 3) to 0 and then change the value of variable i in line 250 with the value that you choose.
+2. If you want to run the Classic SIC, please download the modified KB2E [here](https://github.com/bagindokemas/SAIKGC/blob/master/KB2ETransE.zip)and materialization service of Hermit [here](https://github.com/bagindokemas/SAIKGC/blob/master/MaterializationServiceHErmit.zip). Also, download RUMIS tool from [here](https://github.com/htran010589/nonmonotonic-rule-mining). But, if you want to run the MapReduce SIC, please download TransC and RuLES in the link that I have aforementioned above.
+3. For MapReduce SIC, make 10 copies of each type of triple producer and put these copies under the TripleProducer directory.
+4. Download the approximate consistency checking (ACC) module, uncompress it and put it under the ACC directory.
+5. Download the schemas / TBoxes, uncompress it and put it under the ACC directory.
+6. Download all the scripts inside the ReduceStage folder.
+7. Download all the scripts inside the ScriptForRL folder.
+8. Download all the scripts inside the ScriptForEmbedding folder.
+9. Download all the scripts inside the Materialization folder.
+10. Download all the scripts inside the mainBashScripts folder.
+11. Assume that  you choose the NELL KG, then, run the TBox of the NELL KG using TBox scanner. Collect the outputs (TBoxPatterns), as it will be needed by the ABox scanner, and put these outputs under the TBoxes directory.
+12. There are many alternative combinations that you can try from our paper. For example, if you want to run combination 1: R-ACC-E-ACC-M for the NELL KG, pick NELLMRFlow1.sh and then change the value of variable i (in line 3) to 0 and then change the value of variable i in line 250 with the value that you choose.
+13. Run NELLMRFlow1.sh until it meets a stopping condition. And then go to the folder outputRLIte1, outputTCIte1, and outputMate1 for collecting the schema-correct triples.
